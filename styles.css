@@ -63,18 +63,21 @@ a {
   align-items: center;
 }
 
-.nav-item {
-  margin-left: 5rem;
+.nav-item a {
+  font-weight: bold;
+  margin-left: 3rem;
+  margin-right: 5rem;
 }
 
 .nav-link {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #475569;
+  color: var(--main-heading-color);
 }
 
 .nav-link:hover {
   color: var(--main-gold-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-logo {
