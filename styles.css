@@ -120,4 +120,6 @@ body {
   color: #617d98;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 3%;
 }
