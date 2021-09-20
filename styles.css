@@ -277,7 +277,7 @@ a.button:hover {
 
 .projects-header {
   width: 100%;
-  padding: 10%;
+  padding: 5%;
   display: grid;
   place-items: center;
   margin-left: auto;
@@ -381,6 +381,7 @@ a.button:hover {
 
 .card-footer a {
   padding-right: 10px;
+  color: #102a42;
 }
 
 .card-footer a:visited {
