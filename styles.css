@@ -33,6 +33,7 @@ a {
 .header {
   border-bottom: 1px solid #e2e8f0;
   background-color: var(--main-bg-color);
+  position: sticky;
 }
 
 .navbar {
@@ -73,7 +74,7 @@ a {
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: var(--main-gold-color);
 }
 
 .nav-logo {
@@ -136,7 +137,7 @@ a {
     color: var(--main-heading-color);
   }
 
-  .pfp-container {
+  .home-container .pfp-container {
     display: none;
   }
 }
@@ -199,6 +200,75 @@ a {
 
   box-shadow: rgb(255, 250, 235) 20px -20px 0px -3px,
     rgb(233, 185, 73) 20px -20px;
+}
+
+.about-container,
+.contact-container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  padding: 3% 5% 1% 5%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.about-text p {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
+}
+
+a.button {
+  appearance: button;
+  text-transform: uppercase;
+  background: #e9b949;
+  color: rgb(16, 42, 66);
+  padding: 0.275rem 0.75rem;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background: var(--main-heading-color);
+  color: var(--main-gold-color);
+  transition: all 0.2s linear;
+}
+
+/* media query for About Page less than 768px */
+@media (max-width: 768px) {
+  .about-container {
+    padding-top: 5%;
+  }
+}
+
+.contact-text {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0% 4%;
+}
+
+.contact-text h1 {
+  margin-bottom: 0;
+}
+
+.email:hover {
+  color: var(--main-gold-color);
+  transition: all 0.2s linear;
 }
 
 .footer {
