@@ -217,6 +217,10 @@ a {
   font-size: 1.4rem;
 }
 
+.about-text h1 {
+  padding-top: 2%;
+}
+
 .about-text p {
   text-align: center;
   margin: 0 auto;
