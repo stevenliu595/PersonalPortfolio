@@ -365,7 +365,9 @@ a.button:hover {
 
 .card-tech {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 1%;
 }
 
 .card-tech p {
